@@ -1,5 +1,4 @@
-# This is a simple React project where multiple pages are managed using React Router. The project includes navigation between different components such as Home, About, and Contact
-
+# REACT ROUTER
 📌 Features
 
 Implemented React Router for page navigation.
