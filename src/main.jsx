@@ -1,7 +1,8 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import Layout from "./Layout";
-import { About, Contact, Home, User } from "./component";
+import { About, Contact, Home, User, GitHub } from "./component";
+import { gitHubInfo } from "./component/gitHub/GitHub";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -39,6 +40,7 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
       <Route path="user/:id" element={<User />} />
+      <Route loader={gitHubInfo} path="github" element={<GitHub />} />
     </Route>
   )
 );
